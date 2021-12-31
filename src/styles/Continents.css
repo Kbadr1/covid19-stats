@@ -1,0 +1,31 @@
+.continents {
+  text-align: center;
+}
+.specific-contenet .continent-name {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.specific-contenet .type {
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.specific-contenet .number {
+  font-weight: 500;
+}
+
+.chart-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .chart-box { 
+    padding: 10px;
+  }
+}

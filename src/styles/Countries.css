@@ -1,0 +1,25 @@
+.specific-country {
+  text-align: center;
+}
+.specific-country .country-name{
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.specific-country .type {
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.specific-country .number {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .chart-box { 
+    padding: 10px;
+  }
+}

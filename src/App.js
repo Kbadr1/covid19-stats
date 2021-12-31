@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Nav from "./components/nav/Nav";
+import { Box, Container } from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import AllCases from "./components/all/AllCases";
+import Continents from "./components/continents/Continents";
+import Countries from "./components/countries/Countries";
+import Daily from "./components/daily/Daily";
 
 function App() {
+  const theme = createTheme({
+    typography: {
+      fontFamily: ["Roboto", "sans-serif"].join(","),
+    },
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Box className="App">
+        <Nav />
+        <Container maxWidth="md">
+          <AllCases />
+          <Daily />
+          <Continents />
+          <Countries />
+        </Container>
+      </Box>
+    </ThemeProvider>
   );
 }
-
 export default App;

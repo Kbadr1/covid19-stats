@@ -1,0 +1,15 @@
+.count-box {
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  padding: 20px 10px;
+}
+.count-box .number {
+  font-weight: 500;
+}
+.count-box .type {
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
