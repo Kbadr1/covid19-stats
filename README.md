@@ -3,5 +3,9 @@
 
 **using [NovelCOVID API](https://documenter.getpostman.com/view/11144369/Szf6Z9B3?version=latest#intro)**
 
+  - React
+  - Material-UI
+  - Chart.js
+
 ## [Live demo](https://kbadr1.github.io/covid19-stats/)
 
